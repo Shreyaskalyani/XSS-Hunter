@@ -88,7 +88,7 @@ class XSSScanner:
             table.add_column("#", style="yellow")
             table.add_column("URL", style="magenta")
             
-            for i, url in enumerate(self.attack_surface['urls'][:8], 1):
+            for i, url in enumerate(self.attack_surface['urls'], 1):
                 table.add_row(str(i), url)
             console.print(table)
         
@@ -114,7 +114,7 @@ class XSSScanner:
             table.add_column("Context", style="blue")
             table.add_column("URL", style="magenta")
             
-            for param in self.attack_surface['params'][:15]:
+            for param in self.attack_surface['params']:
                 table.add_row(
                     param.get('param', ''),
                     param.get('method', 'GET'),
@@ -122,9 +122,6 @@ class XSSScanner:
                     param.get('url', '')
                 )
             console.print(table)
-            
-            if len(self.attack_surface['params']) > 15:
-                console.print(f"\n  ... and {len(self.attack_surface['params']) - 15} more parameters")
         
         # Phase 2: Payload Generation
         console.print("\n[yellow]Phase 2: Generating payloads...[/yellow]")
