@@ -1,6 +1,7 @@
 """Detection Agent - Analyzes responses to detect XSS vulnerabilities"""
 
 import re
+import json
 from bs4 import BeautifulSoup
 from typing import Dict, Optional
 
@@ -12,8 +13,10 @@ class DetectionAgent:
             
         content_type = response.headers.get('content-type', '') if hasattr(response, 'headers') else ''
         if 'application/json' in content_type:
-            return None
-            
+            result = self._analyze_json_response(response, payload, param_info)
+            if result:
+                return result
+        
         content = response.text
         
         if 'just a moment' in content.lower() or 'cloudflare' in content.lower():
@@ -46,6 +49,47 @@ class DetectionAgent:
                     'method': param_info.get('method', 'GET')
                 }
                 
+        return None
+    
+    def _analyze_json_response(self, response: object, payload: Dict, param_info: Dict) -> Optional[Dict]:
+        """Analyze JSON responses for XSS in modern APIs"""
+        try:
+            data = response.json()
+            payload_str = payload['payload']
+            
+            def check_json(obj, path=""):
+                if isinstance(obj, dict):
+                    for k, v in obj.items():
+                        if isinstance(v, str) and payload_str[:15] in v:
+                            return True, f"{path}.{k}"
+                        if isinstance(v, (dict, list)):
+                            found, new_path = check_json(v, f"{path}.{k}")
+                            if found:
+                                return True, new_path
+                elif isinstance(obj, list):
+                    for i, item in enumerate(obj):
+                        if isinstance(item, str) and payload_str[:15] in item:
+                            return True, f"{path}[{i}]"
+                        if isinstance(item, (dict, list)):
+                            found, new_path = check_json(item, f"{path}[{i}]")
+                            if found:
+                                return True, new_path
+                return False, ""
+            
+            found, path = check_json(data)
+            if found:
+                return {
+                    'vulnerable': True,
+                    'url': param_info.get('url', ''),
+                    'parameter': param_info.get('param', ''),
+                    'payload': payload_str,
+                    'context': 'json',
+                    'confidence': 'Medium',
+                    'evidence': f'XSS in JSON response at {path}',
+                    'method': param_info.get('method', 'GET')
+                }
+        except:
+            pass
         return None
     
     def _decode_and_check(self, content: str, payload: str) -> bool:
@@ -81,7 +125,7 @@ class DetectionAgent:
         if '<script>' in payload.lower() and '<script>' in content.lower():
             return 'High'
             
-        if re.search(r'on(error|load|click|mouse|focus|blur)\s*=\s*', payload, re.IGNORECASE):
+        if re.search(r'on(error|load|click|mouse|focus|blur|animation|transition)\s*=\s*', payload, re.IGNORECASE):
             if re.search(r'on(error|load|click|mouse|focus|blur)\s*=', content, re.IGNORECASE):
                 return 'High'
                 

