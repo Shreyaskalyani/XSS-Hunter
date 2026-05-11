@@ -18,10 +18,7 @@ class ReportingAgent:
         
     def generate_report(self, results: List[Dict], target: str):
         """Generate and display vulnerability report"""
-        # Display results
         self._display_results(results)
-        
-        # Save reports
         self._save_json(results, target)
         self._save_txt(results, target)
         
@@ -39,7 +36,7 @@ class ReportingAgent:
         table.add_column("Confidence", style="red")
         table.add_column("Context", style="green")
         
-        for result in results[:20]:  # Show first 20
+        for result in results:
             url = result.get('url', '')[:40] + '...' if len(result.get('url', '')) > 40 else result.get('url', '')
             table.add_row(
                 url,
@@ -47,8 +44,10 @@ class ReportingAgent:
                 result.get('confidence', 'Low'),
                 result.get('context', 'unknown')
             )
-            
+        
         console.print(table)
+        if len(results) > 20:
+            console.print(f"\n[dim]Showing {min(20, len(results))} of {len(results)} vulnerabilities[/dim]")
         
     def _save_json(self, results: List[Dict], target: str):
         """Save results to JSON file"""

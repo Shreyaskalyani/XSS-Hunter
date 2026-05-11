@@ -23,7 +23,7 @@ class ReconnaissanceAgent:
     async def crawl(self, start_url: str, depth: int) -> Dict:
         await self._crawl_recursive(start_url, depth)
         return self.attack_surface
-        
+    
     async def _crawl_recursive(self, url: str, remaining_depth: int):
         if remaining_depth < 0 or url in self.visited:
             return
@@ -50,6 +50,9 @@ class ReconnaissanceAgent:
             for form in soup.find_all('form'):
                 form_info = self._extract_form(form, url)
                 self.attack_surface['forms'].append(form_info)
+            
+            self._extract_js_endpoints(soup, url)
+            self._extract_ajax_endpoints(response.text)
             
             if remaining_depth > 0 and len(self.attack_surface['urls']) < 50:
                 for link in soup.find_all('a', href=True):
@@ -117,6 +120,44 @@ class ReconnaissanceAgent:
                 }
                 if param_entry not in self.attack_surface['params']:
                     self.attack_surface['params'].append(param_entry)
+    
+    def _extract_js_endpoints(self, soup, base_url: str):
+        """Extract JavaScript endpoints and API URLs from script tags"""
+        js_patterns = [
+            r'fetch\s*\(\s*["\']([^"\']+)["\']',
+            r'axios\.[a-z]+\s*\(\s*["\']([^"\']+)["\']',
+            r'\.get\s*\(\s*["\']([^"\']+)["\']',
+            r'\.post\s*\(\s*["\']([^"\']+)["\']',
+            r'XMLHttpRequest.*open\s*\([^,]+,\s*["\']([^"\']+)["\']',
+            r'url:\s*["\']([^"\']+)["\']',
+        ]
+        
+        scripts = soup.find_all('script')
+        for script in scripts:
+            if script.string:
+                content = script.string
+                for pattern in js_patterns:
+                    matches = re.findall(pattern, content, re.IGNORECASE)
+                    for match in matches:
+                        if match.startswith('/'):
+                            full_url = urljoin(base_url, match)
+                            if full_url not in self.attack_surface['js_endpoints']:
+                                self.attack_surface['js_endpoints'].append(full_url)
+                        elif match.startswith('http'):
+                            if match not in self.attack_surface['js_endpoints']:
+                                self.attack_surface['js_endpoints'].append(match)
+    
+    def _extract_ajax_endpoints(self, html: str):
+        """Extract AJAX endpoints from HTML"""
+        ajax_patterns = [
+            r'data-url\s*=\s*["\']([^"\']+)["\']',
+            r'data-action\s*=\s*["\']([^"\']+)["\']',
+        ]
+        for pattern in ajax_patterns:
+            matches = re.findall(pattern, html, re.IGNORECASE)
+            for match in matches:
+                if match not in self.attack_surface['js_endpoints']:
+                    self.attack_surface['js_endpoints'].append(match)
     
     def _is_same_domain(self, url1: str, url2: str) -> bool:
         return urlparse(url1).netloc == urlparse(url2).netloc

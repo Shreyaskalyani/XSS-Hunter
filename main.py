@@ -36,7 +36,6 @@ class XSSScanner:
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
         })
         
-        # Initialize payload agent with custom payloads if provided
         self.agents = {
             'recon': ReconnaissanceAgent(self.client),
             'payload': PayloadAgent(custom_payloads),
@@ -58,7 +57,6 @@ class XSSScanner:
             title="Scanner Started"
         ))
         
-        # Phase 1: Reconnaissance
         console.print("\n[yellow]Phase 1: Reconnaissance...[/yellow]")
         self.attack_surface = await self.agents['recon'].crawl(
             self.target, self.depth
@@ -71,6 +69,7 @@ class XSSScanner:
         console.print(f"  Discovered {len(self.attack_surface['urls'])} URLs")
         console.print(f"  Found {len(self.attack_surface['forms'])} forms")
         console.print(f"  Found {len(self.attack_surface['params'])} parameters")
+        console.print(f"  Found {len(self.attack_surface.get('js_endpoints', []))} JS endpoints")
         
         if not self.attack_surface['params']:
             console.print("\n[yellow]No parameters found. Crawling deeper...[/yellow]")
@@ -81,6 +80,16 @@ class XSSScanner:
             self.attack_surface['params'] = deeper_attack_surface['params']
             self.attack_surface['forms'] = deeper_attack_surface['forms']
             console.print(f"  Now found {len(self.attack_surface['params'])} parameters")
+        
+        if self.attack_surface['js_endpoints']:
+            console.print("\n  [cyan]JS Endpoints discovered:[/cyan]")
+            table = Table(show_header=True, header_style="bold cyan", box=None)
+            table.add_column("#", style="yellow")
+            table.add_column("Endpoint", style="magenta")
+            
+            for i, ep in enumerate(self.attack_surface['js_endpoints'][:10], 1):
+                table.add_row(str(i), ep)
+            console.print(table)
         
         if self.attack_surface['urls']:
             console.print("\n  [cyan]URLs discovered:[/cyan]")
@@ -122,13 +131,11 @@ class XSSScanner:
                     param.get('url', '')
                 )
             console.print(table)
-        
-        # Phase 2: Payload Generation
+            
         console.print("\n[yellow]Phase 2: Generating payloads...[/yellow]")
         payloads = self.agents['payload'].generate_payloads()
         console.print(f"  Generated {len(payloads)} payloads")
         
-        # Phase 3: Injection & Detection
         console.print("\n[yellow]Phase 3: Scanning for XSS...[/yellow]")
         semaphore = asyncio.Semaphore(self.threads)
         
@@ -139,14 +146,12 @@ class XSSScanner:
                 tasks.append(task)
                 
         self.results = await asyncio.gather(*tasks)
-        self.results = [r for r in self.results if r]  # Filter None results
+        self.results = [r for r in self.results if r]
         
-        # Phase 4: Learning
         console.print("\n[yellow]Phase 4: Learning from results...[/yellow]")
         for result in self.results:
             self.agents['learner'].record_success(result)
             
-        # Phase 5: Reporting
         console.print("\n[yellow]Phase 5: Generating report...[/yellow]")
         self.agents['reporter'].generate_report(self.results, self.target)
         
@@ -189,7 +194,6 @@ async def main():
     
     console.print("\n[bold red]⚠️  WARNING: Use only for authorized security testing![/bold red]\n")
     
-    # AI Mode
     if args.ai:
         ai_agent = AIAgent()
         target = args.target or "https://example.com"
@@ -226,16 +230,13 @@ async def main():
             await ai_agent.close()
         return
     
-    # Handle target
     target = args.target
     if not target:
         target = "https://example.com"
     
-    # Handle payloads - can be file path or inline
     custom_payloads = []
     if args.payloads:
         payload_input = args.payloads
-        # Check if it's a file
         if Path(payload_input).exists() and Path(payload_input).suffix == '.txt':
             with open(payload_input, 'r') as f:
                 for line in f:
