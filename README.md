@@ -73,6 +73,13 @@ payloads/                  # XSS payload repository
 - JSON: `reports/xss_report_<timestamp>.json`
 - TXT: `reports/xss_report_<timestamp>.txt`
 
+## Demo Screenrecord
+
+
+https://github.com/user-attachments/assets/450374b8-1cc1-4517-94f2-b3b2487c9481
+
+
+
 ## ⚠️ Legal Notice
 
 Use ONLY for:
